@@ -1,10 +1,9 @@
 import RPi.GPIO as GPIO
 import time
-from firebase import firebase
+
 
 
 GPIO.setmode(GPIO.BCM)
-
 
 GPIO_TRIGGER = 18
 GPIO_ECHO = 24
@@ -37,9 +36,6 @@ if __name__ == '__main__':
 	    dist = distance()
             print ("Measured Distance = %.1f m" % dist)
             time.sleep(1)
-firebase= firebase.FirebaseApplication('https://infinity-fe913.firebaseio.com/')
-result = firebase.post('https://infinity-fe913.firebaseio.com/Distance', {'dist$
-print(result)
 
 GPIO.cleanup()
 
