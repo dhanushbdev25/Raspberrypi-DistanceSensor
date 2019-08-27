@@ -1,2 +1,2 @@
 # Raspberrypi-DistanceSensor
-Using Distance sensor with Raspberry Pi which gives single value per execution.  
+Using Distance sensor with Raspberry Pi which provides single value per execution.  
